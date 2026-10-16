@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoes Store</title>
+    <title>My Portfolio and Shoes Store</title>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -14,56 +15,214 @@
 </head>
 
 <body class="text-center bg-white text-slate-900 dark:bg-slate-900 dark:text-white">
+    <header>
+        <nav class="flex flex-col md:flex-row justify-between items-center
+                    mx-5 md:mx-[50px] py-4 gap-[15px]">
 
-    <div class="w-full min-h-screen border-2 border-slate-700 p-4">
+            <h1 class="text-4xl font-bold text-red-500 mb-2">
+                CJ CAMASIS
+            </h1>
+            <ul class="flex flex-col md:flex-row items-left gap-5 p-0 m-0 list-none">
+                <li><a href="#projects" class="transition-colors duration-500 hover:text-pink-500">Projects</a></li>
+                <li><a href="#services" class="transition-colors duration-500 hover:text-pink-500">Services</a></li>
+                <li><a href="#shoes" class="transition-colors duration-500 hover:text-pink-500">Shoes Store</a></li>
+                <li><a href="#contact" class="transition-colors duration-500 hover:text-pink-500">Contact Us </a></li>
 
-        <h1 class="text-4xl font-bold text-red-500">
-            SHOES STORE
-        </h1>
+            </ul>
+            <div class="flex gap-3">
+                <button id="replay-animation" type="button"
+                    class="rounded-lg border border-slate-400 px-4 py-2 transition-colors hover:bg-blue-500 hover:text-white">
+                    Replay Button
+                </button>
+                <button id="toggledark" type="button"
+                    class="rounded-lg border border-slate-400 px-4 py-2 hover:bg-red-500 transition-colors"
+                    aria-pressed="true">
+                    Toggle Light
+                </button>
+            </div>
 
-        <p class="text-center text-base mb-4">
-            List of Shoes
-        </p>
+        </nav>
+    </header>
+    <main class="flex flex-wrap gap-[35px] m-[10px] md:m-[50px]">
 
-        <div class="flex items-center gap-5 mb-3">
-            <label class="w-24 text-left text-lg">Adidas</label>
-            <input type="text" class="flex-1 min-w-0 rounded border-2 border-slate-400 p-4">
-        </div>
+        <section id="projects"
+            class="flex flex-col items-center gap-5 flex-1 min-w-full md:min-w-[280px]
+                   rounded-xl border-2 border-black bg-white p-5 text-black transition-colors duration-300 dark:border-black dark:bg-slate-800 dark:text-white">
 
-        <div class="flex items-center gap-5 mb-3">
-            <label class="w-24 text-left text-lg">Nike</label>
-            <input type="text" class="flex-1 min-w-0 rounded border-2 border-slate-400 p-4">
-        </div>
+            <h2 class="text-3xl md:text-5xl text-blue-600">My Projects</h2>
 
-        <div class="flex items-center gap-5 mb-3">
-            <label class="w-24 text-left text-lg">Jordan</label>
-            <input type="text" class="flex-1 min-w-0 rounded border-2 border-slate-400 p-4">
-        </div>
+            <ul class="space-y-3 text-black dark:text-white">
+                <li>Sell Shoes</li>
+                <li>Shoes Repair</li>
+                <li>Build Shoes</li>
+                <li>Custom Shoes</li>
+                <li>Then we Buy a Vintage shoes</li>
+            </ul>
+        </section>
 
-        <div class="flex items-center gap-5 mb-3">
-            <label class="w-24 text-left text-lg">Puma</label>
-            <input type="text" class="flex-1 min-w-0 rounded border-2 border-slate-400 p-4">
-        </div>
 
-        <div class="flex items-center gap-5 mb-3">
-            <label class="w-24 text-left text-lg">Converse</label>
-            <input type="text" class="flex-1 min-w-0 rounded border-2 border-slate-400 p-4">
-        </div>
+        <section id="services"
+            class="flex flex-col items-center gap-5 flex-1 min-w-full md:min-w-[280px]
+                   rounded-xl border-2 border-black bg-white p-5 text-black transition-colors duration-300 dark:border-black dark:bg-slate-800 dark:text-white">
 
-        <button id="toggledark"
-            class="mt-3 rounded-lg border border-slate-400 px-6 py-3 text-lg hover:bg-red-500 transition-colors">
-            Toggle Dark
-        </button>
+            <h2 class="text-3xl md:text-5xl text-blue-600">My Services</h2>
 
-    </div>
+            <ul class="space-y-3 text-black dark:text-white">
+                Website Creation, System Creation, AI Automation,
+                Database Management, Project Management, Systems Analyst.
+            </ul>
+        </section>
+
+        <section id="shoes" class="w-full border-2 border-slate-700 p-4 md:p-8 rounded-xl
+    bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-white">
+
+            <h2 class="text-xl font-semibold mb-6">List of Shoes</h2>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <label for="adidas" class="w-28 text-left text-lg">
+                        Adidas
+                    </label>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzf8W3ApaFBbbp37ucxnmzbCTKf67iGWXoPEmYk9ggvQ&s=10"
+                        alt="Adidas shoes" class="w-32 h-24 object-contain rounded-lg bg-white p-2">
+                    <input id="adidas" type="text" placeholder="Enter Adidas shoe" class="shoe-input flex-1 w-full min-w-0 rounded border-2
+                border-slate-400 p-4 bg-white text-black">
+                </div>
+
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <label for="nike" class="w-28 text-left text-lg">
+                        Nike
+                    </label>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwzbjcC7VoXZygByIKza7U9sQSLMxuh9fv8tm4R7-qaA&s=10"
+                        alt="Nike shoes" class="w-32 h-24 object-contain rounded-lg bg-white p-2">
+                    <input id="nike" type="text" placeholder="Enter Nike shoe" class="shoe-input flex-1 w-full min-w-0 rounded border-2
+                border-slate-400 p-4 bg-white text-black">
+                </div>
+
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <label for="jordan" class="w-28 text-left text-lg">
+                        Jordan
+                    </label>
+                    <img src="https://www.basketballemotion.com/imagesarticulos/260944/750/zapatilla-jordan-air-jordan-5-retro-traube-blanco-0.webp"
+                        alt="Jordan shoes" class="w-32 h-24 object-contain rounded-lg bg-white p-2">
+                    <input id="jordan" type="text" placeholder="Enter Jordan shoe" class="shoe-input flex-1 w-full min-w-0 rounded border-2
+                border-slate-400 p-4 bg-white text-black">
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <label for="puma" class="w-28 text-left text-lg">
+                        Puma
+                    </label>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8MS0jy1CRVWat1bHJJR4FXncPSDh0tONWJICToextrw&s=10"
+                        alt="Puma shoes" class="w-32 h-24 object-contain rounded-lg bg-white p-2">
+                    <input id="puma" type="text" placeholder="Enter Puma shoe" class="shoe-input flex-1 w-full min-w-0 rounded border-2
+                border-slate-400 p-4 bg-white text-black">
+                </div>
+
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <label for="converse" class="w-28 text-left text-lg">
+                        Converse
+                    </label>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtv3KybJPd33JCapiTjaA8Unkx-QptXh38w6hlQzSnwg&s=10"
+                        alt="Converse shoes" class="w-32 h-24 object-contain rounded-lg bg-white p-2">
+                    <input id="converse" type="text" placeholder="Enter Converse shoe" class="shoe-input flex-1 w-full min-w-0 rounded border-2
+                border-slate-400 p-4 bg-white text-black">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="w-full rounded-xl bg-slate-800 p-4 text-white md:p-8"
+            aria-labelledby="contact-heading">
+            <div class="mx-auto max-w-4xl rounded-lg bg-orange-500 px-5 py-6 text-center text-white sm:px-8">
+                <h2 id="contact-heading" class="mb-8 text-2xl font-semibold">If You Are Compliants or
+                    equest<div>Contact Us!!</div>
+                </h2>
+                <form action="#" class="grid gap-6 text-left sm:grid-cols-2">
+                    <div>
+                        <label for="name" class="mb-2 block font-medium">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required
+                            class="w-full rounded-md border-2 border-slate-900 bg-white px-4 py-3 text-slate-900 outline-none focus:ring-2 focus:ring-white">
+                    </div>
+                    <div>
+                        <label for="email" class="mb-2 block font-medium">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required
+                            class="w-full rounded-md border-2 border-slate-900 bg-white px-4 py-3 text-slate-900 outline-none focus:ring-2 focus:ring-white">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="mb-2 block font-medium">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full resize-y rounded-md border-2 border-slate-900 bg-white px-4 py-3 text-slate-900 outline-none focus:ring-2 focus:ring-white"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="rounded-md border-2 border-slate-900 bg-slate-900 px-6 py-3 font-semibold text-white transition-colors hover:bg-slate-700 sm:col-span-2 sm:justify-self-center">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    </main>
 
     <script>
         const button = document.querySelector('#toggledark');
-        const html = document.querySelector('html');
 
         button.addEventListener('click', function () {
-            html.classList.toggle('dark');
+            const isDark = document.documentElement.classList.toggle('dark');
+            button.setAttribute('aria-pressed', String(isDark));
+            button.textContent = isDark ? 'Toggle Light' : 'Toggle Dark';
+
+            if (window.gsap) {
+                gsap.to(button, {
+                    rotation: -360,
+                    duration: 0.5,
+                    ease: "power2.out",
+                    repeat: 1,
+                    yoyo: true
+                });
+            }
         });
+        document.querySelector('#replay-animation').addEventListener('click', function () {
+            tl.restart();
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+
+    <script>
+        console.log('GSAP version:', gsap.version);
+        // gsap.to("h1", { x: 900, duration: 5, repeat: 5, yoyo: true });
+        //gsap.to("h1", { rotation: 360 });
+        //gsap.to("h1", { opacity: 0.5 });
+        //gsap.to("h1", { scale: 1.5 });
+        //gsap.to("h1", { backgroundColor: "lightblue" });
+        //gsap.from("h1", { y: -60, opacity: 0, duration: 1, ease: "bounce" });
+        //gsap.fromTo("h1", { opacity: 0, }, { opacity: 1, duration: 1 });
+
+        //EASING
+        // gsap.fromTo("h1", { y: -60, opacity: 0, duration: 1, ease: "bounce.out" });
+        // gsap.fromTo("h1", { y: -60, opacity: 0, duration: 1, ease: "power2.out" });
+        // gsap.fromTo("h1", { y: -60, opacity: 0, duration: 1, ease: "back.out(2.5)" });
+        // gsap.fromTo("h1", { y: -60, opacity: 0, duration: 1, ease: "elastic.out(1, 0.5)" });
+
+        //stagger
+        //gsap.from("nav a", { y: -20, opacity: 0, duration: 0.5, ease: "power2.out" });
+
+        //TIMELINE
+        const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.out" } });
+        tl.from("h1", { y: -60, opacity: 0, duration: 1, ease: "bounce.out" });
+        tl.from("nav", { y: -60, opacity: 0, duration: 1, ease: "bounce.out" })
+        tl.from("main section", { y: -60, opacity: 0, duration: 1, ease: "bounce.out" });
+
+
+
     </script>
 
 </body>
